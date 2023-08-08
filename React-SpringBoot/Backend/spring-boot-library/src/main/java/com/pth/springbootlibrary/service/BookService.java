@@ -6,7 +6,7 @@ import com.pth.springbootlibrary.dao.HistoryRepository;
 import com.pth.springbootlibrary.entity.Book;
 import com.pth.springbootlibrary.entity.Checkout;
 import com.pth.springbootlibrary.entity.History;
-import com.pth.springbootlibrary.responemodels.ShelfCurrentLoansResponse;
+import com.pth.springbootlibrary.responsemodels.ShelfCurrentLoansResponse;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

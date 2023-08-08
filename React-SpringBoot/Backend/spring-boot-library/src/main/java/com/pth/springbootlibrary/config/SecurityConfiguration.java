@@ -9,7 +9,7 @@ import org.springframework.web.accept.ContentNegotiationStrategy;
 import org.springframework.web.accept.HeaderContentNegotiationStrategy;
 
 @Configuration
-public class SecurityConfiguration{
+public class SecurityConfiguration {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -22,7 +22,8 @@ public class SecurityConfiguration{
                         configurer
                                 .antMatchers("/api/books/secure/**",
                                         "/api/reviews/secure/**",
-                                        "/api/messages/secure/**")
+                                        "/api/messages/secure/**",
+                                        "/api/admin/secure/**")
                                 .authenticated())
                 .oauth2ResourceServer()
                 .jwt();
@@ -39,6 +40,7 @@ public class SecurityConfiguration{
 
         return http.build();
     }
+
 }
 
 

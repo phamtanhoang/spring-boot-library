@@ -1,4 +1,4 @@
-package com.pth.springbootlibrary.responemodels;
+package com.pth.springbootlibrary.responsemodels;
 
 import com.pth.springbootlibrary.entity.Book;
 import lombok.Data;

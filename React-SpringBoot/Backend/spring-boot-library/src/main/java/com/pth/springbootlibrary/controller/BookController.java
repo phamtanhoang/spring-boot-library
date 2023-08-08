@@ -1,13 +1,13 @@
 package com.pth.springbootlibrary.controller;
 import com.pth.springbootlibrary.entity.Book;
-import com.pth.springbootlibrary.responemodels.ShelfCurrentLoansResponse;
+import com.pth.springbootlibrary.responsemodels.ShelfCurrentLoansResponse;
 import com.pth.springbootlibrary.service.BookService;
 import com.pth.springbootlibrary.utils.ExtractJWT;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://localhost:3000")
 @RestController
 @RequestMapping("/api/books")
 public class BookController {
